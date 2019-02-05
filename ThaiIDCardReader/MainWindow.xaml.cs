@@ -81,6 +81,10 @@ namespace ThaiIDCardReader
           "อำเถอ: " + personData.addrAmphur + "\n" +
           "จังหวัด: " + personData.addrProvince + "\n";
       }
+      catch (Exception e)
+      {
+        status = e.Message;
+      }
       finally
       {
         // update UI in main thread.
